@@ -8,7 +8,7 @@ pub fn Hero() -> Element {
         document::Link { rel: "stylesheet", href: HERO_CSS }
         section { class: "hero",
             div { class: "hero-content",
-                h1 { class: "hero-title", "Welcome to {{project-name}}" }
+                h1 { class: "hero-title", "Welcome to {{app_title}}" }
                 p { class: "hero-subtitle", 
                     "A fullstack Dioxus application with Tauri desktop support" 
                 }

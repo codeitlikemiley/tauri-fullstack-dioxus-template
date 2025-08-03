@@ -8,7 +8,7 @@ pub fn Navbar(children: Element) -> Element {
         document::Link { rel: "stylesheet", href: NAVBAR_CSS }
         nav { class: "navbar",
             div { class: "navbar-container",
-                h2 { class: "navbar-title", "{{project-name}}" }
+                h2 { class: "navbar-title", "{{app_title}}" }
                 div { class: "navbar-links",
                     {children}
                 }

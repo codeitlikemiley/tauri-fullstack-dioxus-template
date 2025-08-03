@@ -1,11 +1,11 @@
 [application]
-name = "{{project-name}}-desktop"
+name = "{{ project-name | snake_case }}-desktop"
 default_platform = "web"
 out_dir = "dist"
 asset_dir = "assets"
 
 [web.app]
-title = "{{project-name}}"
+title = "{{ project-name | title_case}}"
 
 [web.watcher]
 reload_html = true

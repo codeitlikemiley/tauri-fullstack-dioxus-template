@@ -4,7 +4,7 @@ use dioxus::prelude::*;
 pub fn About() -> Element {
     rsx! {
         div { class: "about-page",
-            h1 { class: "text-4xl font-bold mb-6", "About {{project-name}}" }
+            h1 { class: "text-4xl font-bold mb-6", "About {{app_title}}" }
             div { class: "prose lg:prose-xl dark:prose-invert mx-auto",
                 p { "{{description}}" }
                 

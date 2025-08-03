@@ -1,4 +1,4 @@
-# {{project-name}}
+# {{ project-name | title_case}} App
 
 {{description}}
 
@@ -14,7 +14,7 @@ This is a fullstack Dioxus application with:
 ## Project Structure
 
 ```
-{{project-name}}/
+{{ project-name }}/
 ├── api/          # Server functions (shared backend logic)
 ├── ui/           # Shared UI components
 ├── desktop/      # Tauri desktop app

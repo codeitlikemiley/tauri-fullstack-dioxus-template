@@ -2,7 +2,7 @@
 name = "desktop"
 version = "0.1.0"
 edition = "2024"
-authors = ["{{author}}"]
+authors = ["{{authors | default: 'Your Name <your.email@example.com>'}}"]
 description = "{{description}} - Desktop App"
 
 [dependencies]

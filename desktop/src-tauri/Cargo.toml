@@ -1,9 +1,10 @@
 [package]
-name = "{{project-name}}-tauri"
+name = "{{ project-name | snake_case }}"
 version = "0.1.0"
 edition = "2024"
-authors = ["{{author}}"]
-description = "{{description}} - Tauri Backend"
+authors = ["{{authors | default: 'Your Name <your.email@example.com>'}}"]
+license = "MIT"
+description = "{{description}} - Tauri Desktop App"
 
 [build-dependencies]
 tauri-build = { version = "2", features = [] }
@@ -19,5 +20,5 @@ api = { path = "../../api" }
 tauri-plugin-devtools = "2"
 
 [lib]
-name = "{{project-name | snake_case}}_tauri_lib"
+name = "{{ project-name | snake_case }}_tauri_lib"
 crate-type = ["lib", "cdylib", "staticlib"]
