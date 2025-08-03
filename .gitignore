@@ -18,9 +18,9 @@ dist/
 # Node modules
 node_modules/
 
-# Generated CSS
-desktop/assets/tailwind.css
-web/assets/tailwind.css
+# Generated CSS (uncomment if you generate tailwind.css)
+# desktop/assets/tailwind.css
+# web/assets/tailwind.css
 
 # OS files
 .DS_Store

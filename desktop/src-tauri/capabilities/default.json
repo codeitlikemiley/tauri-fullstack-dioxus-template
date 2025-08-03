@@ -1,9 +1,9 @@
 {
   "$schema": "../gen/schemas/capabilities.json",
   "identifier": "default",
-  "description": "Default permissions for {{app_title}}",
+  "description": "Default permissions for {{ project-name | title_case}}",
   "permissions": [
     "core:default",
-    "shell:allow-open"
+    "opener:default"
   ]
 }
