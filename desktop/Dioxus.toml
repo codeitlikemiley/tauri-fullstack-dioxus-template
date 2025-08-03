@@ -1,0 +1,15 @@
+[application]
+name = "{{project-name}}-desktop"
+default_platform = "web"
+out_dir = "dist"
+asset_dir = "assets"
+
+[web.app]
+title = "{{project-name}}"
+
+[web.watcher]
+reload_html = true
+watch_path = ["src", "assets"]
+
+[web.devserver]
+port = 1420

@@ -1,0 +1,84 @@
+.echo-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #f8f9fa;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.echo-container h3 {
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.echo-input-group {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.echo-input {
+  flex: 1;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+.echo-input:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.echo-button {
+  padding: 0.75rem 1.5rem;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.echo-button:hover {
+  background: #5a67d8;
+}
+
+.echo-response {
+  background: white;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  border: 1px solid #e9ecef;
+}
+
+.echo-response-text {
+  margin: 0;
+  color: #495057;
+  font-style: italic;
+}
+
+@media (prefers-color-scheme: dark) {
+  .echo-container {
+    background: #2a2a2a;
+    color: #e9ecef;
+  }
+  
+  .echo-input {
+    background: #1a1a1a;
+    border-color: #444;
+    color: #e9ecef;
+  }
+  
+  .echo-response {
+    background: #1a1a1a;
+    border-color: #444;
+  }
+  
+  .echo-response-text {
+    color: #e9ecef;
+  }
+}

@@ -1,0 +1,23 @@
+[template]
+cargo_generate_version = ">=0.18.0"
+
+[placeholders.project-name]
+prompt = "What is the name of your project?"
+type = "string"
+regex = "^[a-zA-Z][a-zA-Z0-9_-]*$"
+
+[placeholders.author]
+prompt = "Who is the author? (Name <email>)"
+type = "string"
+default = "Your Name <you@example.com>"
+
+[placeholders.description]
+prompt = "Brief description of your project"
+type = "string"
+default = "A fullstack Dioxus app with Tauri desktop support"
+
+[placeholders.identifier]
+prompt = "Application identifier (e.g., com.example.app)"
+type = "string"
+default = "com.example.{{project-name}}"
+regex = "^[a-zA-Z][a-zA-Z0-9.-]*$"
