@@ -1,6 +1,3 @@
-use tauri_plugin_shell::ShellExt;
-
-// Example Tauri command - you can add more native commands here
 #[tauri::command]
 fn greet(name: &str) -> String {
     format!("Hello, {}! Greetings from Tauri!", name)

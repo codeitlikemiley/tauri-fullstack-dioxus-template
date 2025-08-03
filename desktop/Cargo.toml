@@ -1,18 +1,35 @@
 [package]
-name = "desktop"
+name = "{{ project-name | snake_case }}-desktop"
 version = "0.1.0"
 edition = "2024"
 authors = ["{{authors | default: 'Your Name <your.email@example.com>'}}"]
 description = "A fullstack Dioxus app with Tauri - Desktop App"
 
 [dependencies]
-dioxus = { workspace = true, features = ["router", "web", "fullstack"] }
+dioxus = { version = "0.6", features = ["web"] }
+dioxus-logger = "0.6"
 ui = { workspace = true }
 api = { workspace = true }
 serde = { workspace = true }
 serde_json = { workspace = true }
 wasm-bindgen = "0.2"
 serde-wasm-bindgen = "0.6"
+wasm-bindgen-futures = "0.4"
+web-sys = "0.3"
+js-sys = "0.3"
 
-[features]
-default = []
+[workspace]
+members = ["src-tauri"]
+
+[profile]
+
+[profile.wasm-dev]
+inherits = "dev"
+opt-level = 1
+
+[profile.server-dev]
+inherits = "dev"
+
+[profile.android-dev]
+inherits = "dev"
+
