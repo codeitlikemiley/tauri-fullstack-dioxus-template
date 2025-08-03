@@ -1,18 +1,7 @@
 [template]
-cargo_generate_version = ">=0.18.0"
-
-[placeholders.app_title]
-prompt = "What is the display name of your app?"
-type = "string"
-default = "{{crate_name}}"
-
-[placeholders.description]
-prompt = "Brief description of your project"
-type = "string"
-default = "A fullstack Dioxus app with Tauri desktop support"
 
 [placeholders.identifier]
 prompt = "Application identifier (e.g., com.example.app)"
 type = "string"
-default = "com.example.{{crate_name}}"
+default = "com.example.{{ project-name | kebab_case }}"
 regex = "^[a-zA-Z][a-zA-Z0-9.-]*$"
