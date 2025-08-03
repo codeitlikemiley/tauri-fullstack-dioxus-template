@@ -3,7 +3,7 @@ name = "api"
 version = "0.1.0"
 edition = "2024"
 authors = ["{{authors | default: 'Your Name <your.email@example.com>'}}"]
-description = "{{description}} - API"
+description = "A fullstack Dioxus app with Tauri - API"
 
 [dependencies]
 dioxus = { workspace = true, features = ["fullstack"] }

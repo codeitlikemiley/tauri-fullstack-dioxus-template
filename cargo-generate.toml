@@ -1,12 +1,2 @@
 [template]
 cargo_generate_version = ">=0.18.0"
-
-[placeholders.description]
-prompt = "Brief description of your project"
-type = "string"
-default = "A fullstack Dioxus app with Tauri desktop support"
-
-[placeholders.identifier]
-prompt = "Application identifier (e.g., com.example.app)"
-type = "string"
-default = "com.example.{{ project-name | snake_case }}"

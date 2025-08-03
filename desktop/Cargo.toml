@@ -3,7 +3,7 @@ name = "desktop"
 version = "0.1.0"
 edition = "2024"
 authors = ["{{authors | default: 'Your Name <your.email@example.com>'}}"]
-description = "{{description}} - Desktop App"
+description = "A fullstack Dioxus app with Tauri - Desktop App"
 
 [dependencies]
 dioxus = { workspace = true, features = ["router", "web", "fullstack"] }

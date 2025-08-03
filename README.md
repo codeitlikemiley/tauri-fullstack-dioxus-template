@@ -1,6 +1,6 @@
 # {{ project-name | title_case}} App
 
-{{description}}
+A fullstack Dioxus app with Tauri
 
 ## Overview
 

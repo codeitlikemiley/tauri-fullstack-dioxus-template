@@ -6,7 +6,7 @@ pub fn About() -> Element {
         div { class: "about-page",
             h1 { class: "text-4xl font-bold mb-6", "About {{app_title}}" }
             div { class: "prose lg:prose-xl dark:prose-invert mx-auto",
-                p { "{{description}}" }
+                p { "A fullstack Dioxus app with Tauri" }
                 
                 h2 { class: "mt-8", "Features" }
                 ul {
