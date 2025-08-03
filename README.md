@@ -33,18 +33,28 @@ This is a fullstack Dioxus application with:
 
 ## Quick Start
 
+### Clone the Repo
+
+```bash
+cargo generate --git https://github.com/codeitlikemiley/tauri-fullstack-dioxus-template.git
+cd {{ project-name }}
+
+```
+
 ### Desktop Development
 
 ```bash
 cd desktop
-npm install
-npm run dev
+
+# Use your own icon (recommended)
+cargo tauri icon path/to/your/icon.png
+
+# Generate Tailwind Css Classes
+tailwindcss -i input.css -o assets/tailwind.css --watch
+
+cargo tauri dev
 ```
 
-This will:
-1. Start the Tailwind CSS watcher
-2. Launch the Dioxus dev server
-3. Open the Tauri desktop app
 
 ### Web Development
 
@@ -53,12 +63,13 @@ cd web
 dx serve --platform web
 ```
 
-### Building for Production
+### Mobile Development
 
 Desktop:
 ```bash
-cd desktop
-npm run build
+cd mobile
+dx serve --platform android
+dx serve --platform ios
 ```
 
 ## Architecture
@@ -88,18 +99,6 @@ Each platform has its own crate with platform-specific routing and features:
 - `web/` - Pure web application
 - `mobile/` - iOS/Android apps
 
-## Troubleshooting
-
-### dx serve hangs
-The desktop app uses the `-i false` flag to prevent hanging. This is already configured in `tauri.conf.json`.
-
-### Cargo.lock version issues
-If you see errors about Cargo.lock version, change the version from 4 to 3.
-
-### Missing WASM target
-```bash
-rustup target add wasm32-unknown-unknown
-```
 
 ## License
 
